@@ -34,7 +34,7 @@ client1.on_message = on_message
 
 # Diseño de la interfaz mejorado
 st.title("🌓 Boton de OPEN y CLOSE")
-st.markdown("**Botones y Pikachu**")
+st.markdown("**Funcion de botones de Open y Close para tu flor y un Pikachu parchado al lado**")
 st.markdown("---")
 
 # Sección principal con dos columnas
