@@ -81,15 +81,6 @@ with col2:
             use_container_width=True  # Parámetro actualizado
         )
 
-# Área de mensajes
-st.markdown("---")
-st.subheader("📨 Mensajes Recibidos")
-if 'last_message' not in st.session_state:
-    st.session_state.last_message = "Esperando mensajes..."
-
-with st.container(border=True, height=150):
-    st.code(st.session_state.last_message, language="json")
-
 # Pie de página
 st.markdown("---")
 footer_col1, footer_col2 = st.columns(2)
