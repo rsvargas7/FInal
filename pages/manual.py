@@ -14,7 +14,7 @@ st.set_page_config(
 # Muestra la versión de Python
 st.sidebar.markdown(f"**Versión de Python:** `{platform.python_version()}`")
 
-act1 = "Close"
+act1 = "close"
 
 def on_publish(client, userdata, result):
     print("El dato ha sido publicado \n")
@@ -49,7 +49,7 @@ with col1:
                            help="Enviar comando de apertura")
         
         if btn_open:
-            act1 = "Open"
+            act1 = "open"
             client1 = paho.Client("GIT-HUB")                           
             client1.on_publish = on_publish                          
             client1.connect(broker, port)  
@@ -62,7 +62,7 @@ with col1:
                             help="Enviar comando de cierre")
         
         if btn_close:
-            act1 = "Close"
+            act1 = "close"
             client1 = paho.Client("GIT-HUB")                           
             client1.on_publish = on_publish                          
             client1.connect(broker, port)  
