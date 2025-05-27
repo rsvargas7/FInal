@@ -62,13 +62,12 @@ with col1:
             st.toast("Comando 'Cerrar' enviado!", icon="🔴")
 
 with col2:
-    st.subheader("Estado del Sistema")
-    with st.container(border=True):
-        # GIF animado de ejemplo (reemplázalo con tu URL)
-        st.markdown("### 🎛️ Visualización en tiempo real")
+    with st.container(border=True, height=300): 
+        st.subheader("📊 Visualización del Sistema")
+        # GIF animado con parámetro actualizado
         st.image("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExam9mdzNocng2Mmc1MGc2dGk5ejlrMzY0NTJ6d2l0M3Nid2Mxdm5jbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/slVWEctHZKvWU/giphy.gif",
-                caption="Simulación de funcionamiento del sistema",
-                use_column_width=True)
+            caption="Simulación del sistema en tiempo real",
+            use_container_width=True
 
 # Área de mensajes recibidos
 st.markdown("---")
