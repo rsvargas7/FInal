@@ -99,7 +99,3 @@ with st.container(border=True, height=150):
 st.markdown("---")
 st.caption("Conexión MQTT: broker.mqttdashboard.com:1883")
 st.caption("Tópico: Ciaccona")
-    st.write('')
-
-
-
