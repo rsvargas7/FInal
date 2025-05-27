@@ -69,7 +69,6 @@ with col2:
             caption="Simulación del sistema en tiempo real",
             use_container_width=True
 
-# Área de mensajes recibidos
 st.markdown("---")
 st.subheader("📨 Mensajes Recibidos")
 if 'last_message' not in st.session_state:
@@ -78,7 +77,6 @@ if 'last_message' not in st.session_state:
 with st.container(border=True, height=150):
     st.code(st.session_state.last_message, language="json")
 
-# Notas al pie
 st.markdown("---")
 st.caption("Conexión MQTT: broker.mqttdashboard.com:1883")
 st.caption("Tópico: Ciaccona")
