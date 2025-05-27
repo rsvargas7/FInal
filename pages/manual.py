@@ -3,7 +3,6 @@ import time
 import streamlit as st
 import json
 import platform
-from streamlit_extras.colored_header import colored_header
 
 # Configuración de la página
 st.set_page_config(
@@ -34,13 +33,9 @@ port = 1883
 client1 = paho.Client("GIT-HUB")
 client1.on_message = on_message
 
-# Diseño de la interfaz
-colored_header(
-    label="🔌 Panel de Control MQTT",
-    description="Control remoto por protocolo MQTT",
-    color_name="blue-70"
-)
-
+# Diseño de la interfaz alternativa
+st.title("🔌 Panel de Control MQTT")
+st.markdown("**Control remoto por protocolo MQTT**")
 st.markdown("---")
 
 # Sección de control de actuadores
