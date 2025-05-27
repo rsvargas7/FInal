@@ -72,7 +72,7 @@ with col1:
 
 with col2:
     with st.container(border=True, height=300):  # Altura fija para mejor alineación
-        st.subheader("⚡ Visualización del Pikachu tomando ronsito ⚡")
+        st.subheader("⚡ Pikachu tomando ronsito ⚡")
         
         # GIF animado con parámetro actualizado
         st.image(
