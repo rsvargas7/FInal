@@ -7,7 +7,7 @@ import platform
 # Configuración de la página
 st.set_page_config(
     page_title="MQTT Control Panel",
-    page_icon="🔌",
+    page_icon="🌓",
     layout="wide"
 )
 
@@ -33,8 +33,8 @@ client1 = paho.Client("GIT-HUB")
 client1.on_message = on_message
 
 # Diseño de la interfaz mejorado
-st.title("🔌 Panel de Control MQTT")
-st.markdown("**Control remoto por protocolo MQTT**")
+st.title("🌓 Boton de OPEN y CLOSE")
+st.markdown("**Botones y Pikachu**")
 st.markdown("---")
 
 # Sección principal con dos columnas
@@ -72,7 +72,7 @@ with col1:
 
 with col2:
     with st.container(border=True, height=300):  # Altura fija para mejor alineación
-        st.subheader("📊 Visualización del Sistema")
+        st.subheader("⚡ Visualización del Pikachu tomando ronsito ⚡")
         
         # GIF animado con parámetro actualizado
         st.image(
