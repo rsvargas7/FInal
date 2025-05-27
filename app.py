@@ -8,7 +8,7 @@ import json
 
 # Configuración de página
 st.set_page_config(
-    page_title="Control por Voz Avanzado",
+    page_title="Controlador por voz",
     page_icon="🎙️",
     layout="centered"
 )
@@ -58,8 +58,8 @@ client1.on_publish = on_publish
 
 # Encabezado mejorado
 st.markdown('<div class="header">', unsafe_allow_html=True)
-st.title("🎙️ Control por Comando Vocal")
-st.markdown("Sistema de reconocimiento de voz integrado con MQTT")
+st.title("🎙️ Controlador de voz")
+st.markdown("Sistema de reconocimiento de voz integrado con ejemplo de Jigglypuff")
 st.markdown('</div>', unsafe_allow_html=True)
 
 # GIF animado grande con parámetro actualizado
