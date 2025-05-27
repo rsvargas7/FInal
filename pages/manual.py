@@ -6,7 +6,7 @@ import platform
 
 # Configuración de la página
 st.set_page_config(
-    page_title="MQTT Control Panel",
+    page_title="Flor",
     page_icon="🌓",
     layout="wide"
 )
@@ -33,7 +33,7 @@ client1 = paho.Client("GIT-HUB")
 client1.on_message = on_message
 
 # Diseño de la interfaz mejorado
-st.title("🌓 Boton de OPEN y CLOSE")
+st.title("🏵️ Boton de OPEN y CLOSE 🏵️")
 st.markdown("**Funcion de botones de Open y Close para tu flor y un Pikachu parchado al lado**")
 st.markdown("---")
 
