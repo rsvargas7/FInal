@@ -3,7 +3,6 @@ import time
 import streamlit as st
 import json
 import platform
-from streamlit_extras.colored_header import colored_header
 
 # Configuración de la página
 st.set_page_config(
@@ -33,13 +32,9 @@ port = 1883
 client1 = paho.Client("GIT-HUB")
 client1.on_message = on_message
 
-# Diseño de la interfaz
-colored_header(
-    label="🔌 Panel de Control MQTT",
-    description="Control remoto por protocolo MQTT",
-    color_name="blue-70"
-)
-
+# Diseño de la interfaz - Versión sin streamlit-extras
+st.title("🔌 Panel de Control MQTT")
+st.markdown("**Control remoto por protocolo MQTT**")
 st.markdown("---")
 
 # Sección de control de actuadores y GIF
@@ -69,7 +64,7 @@ with col1:
 with col2:
     st.subheader("Estado del Sistema")
     with st.container(border=True):
-        # GIF animado (reemplaza la URL con tu GIF preferido)
+        # GIF animado de ejemplo (reemplázalo con tu URL)
         st.markdown("### 🎛️ Visualización en tiempo real")
         st.image("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExam9mdzNocng2Mmc1MGc2dGk5ejlrMzY0NTJ6d2l0M3Nid2Mxdm5jbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/slVWEctHZKvWU/giphy.gif",
                 caption="Simulación de funcionamiento del sistema",
