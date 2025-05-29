@@ -49,7 +49,7 @@ with col1:
                            help="Enviar comando de apertura")
         
         if btn_open:
-            act1 = "open"
+            act1 = "Open"
             client1 = paho.Client("GIT-HUB")                           
             client1.on_publish = on_publish                          
             client1.connect(broker, port)  
@@ -62,7 +62,7 @@ with col1:
                             help="Enviar comando de cierre")
         
         if btn_close:
-            act1 = "close"
+            act1 = "Close"
             client1 = paho.Client("GIT-HUB")                           
             client1.on_publish = on_publish                          
             client1.connect(broker, port)  
